@@ -2,9 +2,70 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>发光的四边形按钮</title>
+		<style type="text/css">
+		    body{background: #000;}
+			.fg{
+			    position: relative;
+			    margin: 100px auto;
+                width: 596px;
+                height: 84px;
+                text-align: center;
+                line-height: 84px;
+                background: rgba(25, 57, 97, 0.54);
+                color: rgb(255, 255, 255);
+                border: 2px solid rgba(175, 191, 221, 0.41);
+               
+                font-size: 23px;
+			}			
+			.zb{
+			    position: absolute;
+			    top: -2px;
+			    left: -2px;
+			    width: 600px;
+                height: 88px;
+                background: rgba(48, 100, 161, 0.5);
+                z-index: 99;
+                transform: scale(1);
+                border-radius: 6% 0 6% 0/60% 0 60% 0;
+                box-shadow: 0 0 40px 12px #1e416b;
+             
+			}
+			
+			 .fg:after,.fg:before{
+                content: "";
+                position: absolute;
+                height: 35%;
+                width: 9%;
+                background: #000;
+                border-bottom: 2px solid rgba(175, 191, 221, 0.41);
+            }
+            .fg:after{
+                transform: rotate(144deg) translate(-10%,-63%);
+                bottom: 0;
+                right: 0;
+            }
+            .fg:before{
+                transform: rotate(-38deg) translate(-10%,-63%);
+                top: 0;
+                left: 0;
+                
+            }
+
+		</style>
 	</head>
 	<body>
-	    你好
+
+	    	<div id="cd" class="fg">
+	    	    登录 
+	    	    <div class="zb"></div>
+            </div>
+
+	    
+	    
 	</body>
 </html>
+<script type="text/javascript">
+ 
+	
+</script>
